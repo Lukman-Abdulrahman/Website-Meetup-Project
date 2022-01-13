@@ -13,13 +13,13 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='meetup',
             name='date',
-            field=models.DateField(default=1),
+            field=models.DateField(default='2022-1-10'),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='meetup',
             name='organizer_email',
-            field=models.EmailField(default=1, max_length=254),
+            field=models.EmailField(default='test@test.com', max_length=254),
             preserve_default=False,
         ),
     ]
